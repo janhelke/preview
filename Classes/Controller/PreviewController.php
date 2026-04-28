@@ -58,7 +58,7 @@ class PreviewController
      */
     protected $extensionConfiguration;
 
-    public function __construct(ModuleTemplate $moduleTemplate = null, IconFactory $iconFactory = null, SiteFinder $siteFinder = null, ExtensionConfiguration $extensionConfiguration = null)
+    public function __construct(?ModuleTemplate $moduleTemplate = null, ?IconFactory $iconFactory = null, ?SiteFinder $siteFinder = null, ?ExtensionConfiguration $extensionConfiguration = null)
     {
        // $this->moduleTemplate = $moduleTemplate ?? GeneralUtility::makeInstance(ModuleTemplate::class);
         $this->iconFactory = $iconFactory ?? GeneralUtility::makeInstance(IconFactory::class);
