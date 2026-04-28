@@ -42,7 +42,7 @@ class Preview implements MiddlewareInterface
     public const REQUEST_ATTRIBUTE = 'tx_preview';
 
 
-    public function __construct(Context $context = null)
+    public function __construct(?Context $context = null)
     {
         $this->context = $context ?? GeneralUtility::makeInstance(Context::class);
     }
